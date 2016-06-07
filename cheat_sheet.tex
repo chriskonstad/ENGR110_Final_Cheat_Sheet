@@ -1,5 +1,6 @@
 \documentclass[10pt]{article}
 \usepackage{mathtools}
+\usepackage{amsmath}
 \usepackage{multicol}
 \setlength{\columnsep}{1cm}
 \pagestyle{empty}
@@ -27,6 +28,12 @@
     \hline
   \end{tabular}
 ]
+
+  \section{Factors of Production}
+    entrepreneurship\\
+    land\\
+    capital\\
+    labor\\
 
 \section{EUAW}
 \begin{equation*}
@@ -86,7 +93,14 @@
 \section{WACC}
 Equity is not taxed!
 \begin{equation*}
-  WACC_{after} = \left[\%_{equity} \times Price_{equity}\right] + \left[\%_{debt} \times Price_{debt} \times (1 - Tax\_rate) \right]
+  \begin{split}
+    WACC_{after} = &\left[\%_{equity} \times Price_{equity}\right] +\\ &\left[\%_{debt} \times Price_{debt} \times (1 - Tax\_rate) \right]
+  \end{split}
+\end{equation*}
+Prices in above equation are in percentage values.\\
+
+\begin{equation*}
+  WACC = \frac{\sum amt}{total\_raised}
 \end{equation*}
 
 \end{multicols*}
