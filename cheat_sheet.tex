@@ -1,0 +1,90 @@
+\documentclass[10pt]{article}
+\usepackage{mathtools}
+\usepackage{multicol}
+\setlength{\columnsep}{1cm}
+\pagestyle{empty}
+\setlength\parindent{0pt}
+\usepackage[paperwidth=8.5in,
+  paperheight=11in,
+  left=0.2in,
+  right=0.2in,
+  top=0.2in,
+  bottom=0.2in]{geometry}
+
+
+\begin{document}
+\begin{multicols*}{2}
+  [
+\section{Perfect Competition}
+  \begin{tabular}{|l| l l l l|}
+    \hline
+    Market Structure & \# Sellers & Commodity & Barriers to Entry & Price Control\\
+    \hline
+    Perfect Comp. & A lot & Homogenous & None & None\\
+    Monop. Comp. & Many & Differentiated & Few & Some\\
+    Oligopoly & Very Few & Homo. and Diff. & Many & More\\
+    Monopoly & 1 & Unique & Near Impossible & Complete\\
+    \hline
+  \end{tabular}
+]
+
+\section{EUAW}
+\begin{equation*}
+  NPV = EUAW \times \left[ \frac{{(1 + i)}^n - 1}{i{(1+i)}^n} \right]
+\end{equation*}
+
+\begin{equation*}
+  EUAW = EUAB - EUAC
+\end{equation*}
+
+\section{Time-Value}
+\begin{equation*}
+  (F/A, i, n) \coloneqq FV = A\frac{{(1+i)}^n - 1}{i}
+\end{equation*}
+
+\begin{equation*}
+  (P/A, i, n) \coloneqq PV = A\frac{{(1+i)}^n - 1}{i{(1+i)}^n}
+\end{equation*}
+
+\begin{equation*}
+  Perpetuity \coloneqq PV = \frac{A}{i}
+\end{equation*}
+
+\begin{equation*}
+  Loan\_Payment =  \frac{i\times (PV)}{1-{(1+i)}^{-n}}
+\end{equation*}
+
+\begin{equation*}
+  (F/P, i, n) \coloneqq F = PV{(1+i)}^n
+\end{equation*}
+
+\begin{equation*}
+  (P/F, i, n) \coloneqq P = \frac{FV}{{(1+i)}^n}
+\end{equation*}
+
+\section{Incremental IRR}
+  For \textbf{lending}: Accept $Option_1$ if $IRR_{1-2} > MARR$.\\
+  Opposite for \textbf{borrowing}.\\
+  If either individual IRR $<$ MARR, then don't accept that one.
+\begin{equation*}
+  \Delta IRR = init_{high} - init_{low}
+\end{equation*}
+  If $\Delta IRR$ found $\geq$ MARR, then $init_{high}$, else $init_{low}$.
+
+  \section{Ranges and Risk}
+\begin{equation*}
+  mean = \frac{optimistic + 4\times most\_likely + pessimistic}{6}
+\end{equation*}
+
+\begin{equation*}
+  \sigma = \sqrt{\sum_j x_j^2 \times P(x_j) - {\left[ E(X) \right]}^2} = \sqrt{E(X^2) - {E(X)}^2}
+\end{equation*}
+\begin{equation*}
+  \sigma = \sqrt{{E(X-mean)}^2}
+\end{equation*}
+
+\begin{equation*}
+\end{equation*}
+
+\end{multicols*}
+\end{document}
